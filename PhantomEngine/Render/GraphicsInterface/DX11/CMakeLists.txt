@@ -1,0 +1,1 @@
+set(GL_RHI_SRC DirectX11.cpp CACHE INTERNAL "DirectX11 Adapater")

@@ -1,2 +1,3 @@
 # Phantom
-Game engine study prototype
+
+Game engine from 0

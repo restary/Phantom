@@ -3,6 +3,7 @@
 //
 
 #include "DirectX11.hpp"
+#include "Debug.hpp"
 
 
 struct VERTEX {
@@ -19,7 +20,9 @@ namespace PhantomEngine::Render
     {
         GraphicsInterface::Initialize(settings);
 
+        Debug::Log("Initialize DX 11...");
         CreateGraphicsResources();
+        Debug::Log("Initialize complete");
     }
 
     void DirectX11::CreateRenderTarget()
@@ -165,8 +168,8 @@ namespace PhantomEngine::Render
         if (hr == SEC_E_OK) {
             CreateRenderTarget();
             SetViewPort();
-            InitPipeline();
-            InitGraphics();
+//            InitPipeline();
+//            InitGraphics();
         }
 
         return hr;

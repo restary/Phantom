@@ -29,10 +29,10 @@ endif()
 # Build all libraries
 add_subdirectory(PhantomEngine)
 add_subdirectory(Application/${BUILD_OS})
-add_subdirectory(Tests/RTTI)
+# add_subdirectory(Tests/RTTI)
 
 
-# Link accroding to OS
+# Link according to OS
 set(ENGINE_LIBS Application Render Math IO Common)
 add_executable(${PROJECT_NAME} Main.cpp)
 IF(BUILD_OS STREQUAL "Windows")
